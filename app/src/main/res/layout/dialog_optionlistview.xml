@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="60dp"
+    android:weightSum="4"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/imgbtnedit_dialogoptionlv"
+        android:src="@drawable/imgpencil"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/customimgbtnedit_dialog"
+        />
+    <ImageButton
+        android:id="@+id/imgbtndelete_dialogoptionlv"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/imgdelete"
+        android:scaleType="centerInside"
+        android:background="@drawable/customimgbtnedit_dialog"/>
+    <ImageButton
+        android:id="@+id/imgbtnremind_dialogoptionlv"
+        android:src="@drawable/imgringing"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/customimgbtnedit_dialog"/>
+    <ImageButton
+        android:id="@+id/imgbtnfolder_dialogoptionlv"
+        android:src="@drawable/imgfolders"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/customimgbtnedit_dialog"/>
+
+</LinearLayout>

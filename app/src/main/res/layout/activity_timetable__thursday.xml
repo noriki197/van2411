@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lvThursday_timetable">
+</ListView>
+    <ImageButton
+        android:id="@+id/btnAddThursday_timetable"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/imgadd"
+        android:background="@drawable/custom_btnadd_timetable"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>

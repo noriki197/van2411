@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TimePicker
+    android:id="@+id/tp_dialogthemnhacnho"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+>
+    </TimePicker>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOK_dialogthemnhacnho"
+        android:layout_below="@+id/tp_dialogthemnhacnho"
+        android:text="OK"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/custom_btndialogthemcongviec"
+        android:textColor="#ffff"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHUY_dialogthemnhacnho"
+        android:layout_below="@id/tp_dialogthemnhacnho"
+        android:layout_marginLeft="220dp"
+        android:text="CANCEL"
+
+        android:background="@drawable/custom_btndialogthemcongviec"
+        android:textColor="#ffff"/>
+</RelativeLayout>

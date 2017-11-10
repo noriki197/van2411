@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+    >
+<TextView
+    android:id="@+id/tvDialog_CNCONGVIEC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="CẬP NHẬT CÔNG VIỆC"
+    android:textSize="35sp"
+    android:gravity="center"
+    android:textColor="#0325ff"
+    android:layout_marginTop="10dp"
+    />
+<EditText
+    android:textColor="#68ffeb"
+    android:id="@+id/edtcapnhatcongviec_Dialog_CNCONGVIEC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvDialog_CNCONGVIEC"
+    android:hint="công việc hoặc môn học"
+    android:textColorHint="#ffffff"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"/>
+<EditText
+    android:textColor="#68ffeb"
+    android:id="@+id/edtcapnhatthoigian_Dialog_CNCONGVIEC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edtcapnhatcongviec_Dialog_CNCONGVIEC"
+    android:hint="tiết hoặc thời gian"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:textColorHint="#ffffff"
+    />
+<EditText
+    android:textColor="#68ffeb"
+    android:id="@+id/edtcapnhatdiadiem_Dialog_CNCONGVIEC"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edtcapnhatthoigian_Dialog_CNCONGVIEC"
+    android:hint="phòng hoặc địa diểm"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:textColorHint="#ffffff"/>
+<Button
+    android:id="@+id/btncapnhat_Dialog_CNCONGVIEC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="CẬP NHẬT"
+    android:layout_below="@id/edtcapnhatdiadiem_Dialog_CNCONGVIEC"
+    android:layout_marginLeft="40dp"
+    android:textColor="#ffffff"
+    android:background="@drawable/custom_btndialogthemcongviec"
+    />
+<Button
+    android:id="@+id/btnhuy_Dialog_CNCONGVIEC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/edtcapnhatdiadiem_Dialog_CNCONGVIEC"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="40dp"
+    android:text="HỦY"
+    android:textColor="#ffffff"
+    android:background="@drawable/custom_btndialogthemcongviec"
+    />
+</RelativeLayout>

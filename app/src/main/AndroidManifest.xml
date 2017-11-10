@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="androidcndd.bkdn.cvn.a311">
+
+    <!-- Required by Calendar Provider -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Camera_chip" />
+        <activity android:name=".Timetable_Monday" />
+        <activity android:name=".Timetable_tuesday" />
+        <activity android:name=".TimeTable" />
+        <activity android:name=".Timetable_Wednesday" />
+        <activity android:name=".Timetable_Thursday" />
+        <activity android:name=".Timetable_Friday" />
+        <activity android:name=".Timetable_Saturday" />
+        <activity android:name=".Timetable_Sunday" />
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+            />
+        </receiver>
+
+        <service
+            android:name=".Music"
+            android:enabled="true" />
+
+        <activity android:name=".document_chip" />
+        <activity android:name=".notification"></activity>
+        <activity android:name=".cancel_notification" />
+        <activity android:name=".Month_Calendar">
+        </activity>
+        <activity android:name=".EditActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+    </application>
+
+</manifest>
