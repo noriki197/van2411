@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/custom_item_listview"
+        >
+
+        <TextView
+            android:gravity="top"
+            android:padding="10dp"
+            android:id="@+id/alarm_item_name"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:text="work"
+            android:textColor="#37a131"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/alarm_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/alarm_item_name"
+            android:text="00 : 00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:text="mon"
+            android:textSize="20sp"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:textColor="#2545d1"
+            android:textStyle="bold"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/alarm_item_dayofweek"
+            android:layout_below="@+id/alarm_item_name"
+            />
+
+        <ToggleButton
+            android:background="@drawable/custom_button_tone"
+            android:id="@+id/alarm_item_toogle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

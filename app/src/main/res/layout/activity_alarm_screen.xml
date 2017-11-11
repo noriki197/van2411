@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/alarm_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="NOTICE!"
+        android:textColor="#69e7c1"
+        android:textSize="38dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/alarm_screen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 : 00"
+        android:textSize="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/alarm_screen_title"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:id="@+id/alarm_screen_name"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/alarm_screen_dismiss"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Alarm name"
+        android:textSize="20sp"
+        android:textColor="#ffff"/>
+
+    <Button
+        android:id="@+id/alarm_screen_dismiss"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Dismiss"
+        android:textSize="20dp"
+        android:textColor="#ff545f"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_btn_tone"/>
+
+
+</RelativeLayout>

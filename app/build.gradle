@@ -4,7 +4,7 @@ apply plugin: 'com.github.kt3k.coveralls'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         vectorDrawables {
             useSupportLibrary = true
@@ -85,7 +85,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
     executionData = files "${buildDir}/jacoco/testDebugUnitTest.exec"
     sourceDirectories = files android.sourceSets.main.java.srcDirs
     classDirectories = fileTree(dir: "${buildDir}/intermediates/classes/debug",
-            exclude: [ '**/R.class', '**/R$*.class' ])
+            exclude: ['**/R.class', '**/R$*.class'])
 
     doLast {
         println "coveralls report has been generated to file://${buildDir}/reports/jacoco/test/jacocoTestReport.xml"

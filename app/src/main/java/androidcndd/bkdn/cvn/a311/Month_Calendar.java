@@ -319,13 +319,13 @@ public class Month_Calendar extends AppCompatActivity implements LoaderManager.L
     private void toggleEmptyView(boolean visible) {
         if (visible) {
 
-            findViewById(R.id.button_permission)
+            /*findViewById(R.id.button_permission)
                     .setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             requestCalendarPermissions();
                         }
-                    });
+                    });*/
         } else {
 
         }

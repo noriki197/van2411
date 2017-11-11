@@ -6,6 +6,8 @@
     <!-- Required by Calendar Provider -->
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -13,9 +15,8 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,29 +33,24 @@
         <activity android:name=".Timetable_Friday" />
         <activity android:name=".Timetable_Saturday" />
         <activity android:name=".Timetable_Sunday" />
-
-        <receiver android:name=".AlarmReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-
-                <category android:name="android.intent.category.HOME" />
-            </intent-filter>
-            />
-        </receiver>
-
-        <service
-            android:name=".Music"
-            android:enabled="true" />
-
         <activity android:name=".document_chip" />
-        <activity android:name=".notification"></activity>
-        <activity android:name=".cancel_notification" />
-        <activity android:name=".Month_Calendar">
-        </activity>
-        <activity android:name=".EditActivity"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-
+        <activity android:name=".Month_Calendar"></activity>
+        <activity
+            android:name=".EditActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".NoticeActivity"
+            android:theme="@style/Widget.AppCompat.ActionBar"></activity>
+        <activity android:name=".AlarmScreen"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity android:name=".AlarmDetailsActivity"
+            android:theme="@style/Theme.AppCompat"/>
+        <service android:name=".AlarmService"
+            android:enabled="true"/>
+        <receiver android:name=".AlarmManagerHelper">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

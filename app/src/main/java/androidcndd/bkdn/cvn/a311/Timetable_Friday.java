@@ -163,40 +163,13 @@ public class Timetable_Friday extends AppCompatActivity {
         imgbtnremind_Dialog_optionlv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog_themnhacnho.show();
+                Intent intent = new Intent(Timetable_Friday.this,NoticeActivity.class);
+                startActivity(intent);
                 dialog_optionlv.dismiss();
             }
         });
 
-        btnOK_dialogthemnhacnho.setOnClickListener(new View.OnClickListener() {
-            @TargetApi(Build.VERSION_CODES.N)
-            @Override
-            public void onClick(View v) {
-                calendar = Calendar.getInstance();
-                calendar.set(Calendar.HOUR_OF_DAY,timePicker.getCurrentHour());
-                calendar.set(Calendar.MINUTE,timePicker.getCurrentMinute());
-                calendar.set(Calendar.DAY_OF_WEEK,Calendar.FRIDAY);
 
-                alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-                Intent intent = new Intent(Timetable_Friday.this,AlarmReceiver.class);
-
-
-
-
-                pendingIntent = PendingIntent.getBroadcast(Timetable_Friday.this,0,intent,pendingIntent.FLAG_UPDATE_CURRENT);
-
-                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),alarmManager.INTERVAL_DAY*7,pendingIntent);
-
-
-                dialog_themnhacnho.dismiss();
-            }
-        });
-        btnHuy_dialogthemnhacnho.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog_themnhacnho.dismiss();
-            }
-        });
         imgbtndocument_Dialog_optionlv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
