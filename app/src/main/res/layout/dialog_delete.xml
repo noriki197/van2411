@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/txtwarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARNING"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_btn"
+        />
+    <TextView
+        android:id="@+id/txtdelete"
+        android:layout_below="@+id/txtwarn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to remove it?Remove all notes belong to this work!!"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnok_dialogdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdelete"
+        android:layout_marginLeft="@dimen/margin_left_btn"
+        android:layout_marginTop="@dimen/margin_top_btn"
+        android:text="OK"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/custom_button_tone"/>
+    <Button
+        android:id="@+id/btncancel_dialogdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_right_btn"
+        android:layout_marginTop="@dimen/margin_top_btn"
+        android:text="CANCEL"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/custom_button_tone"
+        android:layout_below="@+id/txtdelete"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

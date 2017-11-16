@@ -41,7 +41,7 @@
         <activity android:name=".NoticeActivity"
             android:theme="@style/Widget.AppCompat.ActionBar"></activity>
         <activity android:name=".AlarmScreen"
-            android:theme="@style/Theme.AppCompat"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity android:name=".AlarmDetailsActivity"
             android:theme="@style/Theme.AppCompat"/>
         <service android:name=".AlarmService"
