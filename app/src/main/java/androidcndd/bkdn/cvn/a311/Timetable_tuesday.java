@@ -55,6 +55,11 @@ public class Timetable_tuesday extends AppCompatActivity {
     AlarmManager alarmManager;
     PendingIntent pendingIntent;
 
+    //dialog nhac nho xoa item
+    Dialog dialog_deteleitem;
+    Button btnok_dialogdelete,btncancel_dialogdelete;
+
+
     MyDBHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,12 +118,26 @@ public class Timetable_tuesday extends AppCompatActivity {
         imgbtndelete_Dialog_optionlv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                dialog_deteleitem.show();
+                dialog_optionlv.dismiss();
+            }
+        });
+        btnok_dialogdelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 arrayListTuesday_timetable.remove(id);
                 adapterTuesday_timetable.notifyDataSetChanged();
                 lvTuesDay_timetable.setAdapter(adapterTuesday_timetable);
-
-                db.querydata("DELETE FROM ListTuesday WHERE id = '"+id+"'");
-                dialog_optionlv.dismiss();
+                db.querydata("DELETE FROM ListMonday WHERE id = '"+id+"'");
+                Intent intent = new Intent(Timetable_tuesday.this,NoticeActivity.class);
+                startActivity(intent);
+                dialog_deteleitem.dismiss();
+            }
+        });
+        btncancel_dialogdelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog_deteleitem.dismiss();
             }
         });
         //chinh sua noi dung 1 dong
@@ -210,6 +229,13 @@ public class Timetable_tuesday extends AppCompatActivity {
         timePicker = (TimePicker) dialog_themnhacnho.findViewById(R.id.tp_dialogthemnhacnho);
         btnOK_dialogthemnhacnho = (Button) dialog_themnhacnho.findViewById(R.id.btnOK_dialogthemnhacnho);
         btnHuy_dialogthemnhacnho = (Button) dialog_themnhacnho.findViewById(R.id.btnHUY_dialogthemnhacnho);
+
+        //dialog xoa item
+        dialog_deteleitem = new Dialog(Timetable_tuesday.this);
+        dialog_deteleitem.setContentView(R.layout.dialog_delete);
+        dialog_deteleitem.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        btnok_dialogdelete = (Button) dialog_deteleitem.findViewById(R.id.btnok_dialogdelete);
+        btncancel_dialogdelete = (Button) dialog_deteleitem.findViewById(R.id.btncancel_dialogdelete);
 
 
         //sqlite

@@ -65,6 +65,7 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/divider1"
             android:checked="true"
+
             android:text="@string/details_sunday" />
 
         <androidcndd.bkdn.cvn.a311.CustomSwitch
@@ -181,7 +182,7 @@
                     android:paddingBottom="16dp"
                     android:text="tone"
                     android:padding="6dp"
-                    android:textColor="#030303"
+                    android:textColor="@color/white"
                     android:background="@drawable/custom_button_tone"
                     />
             </LinearLayout>
@@ -194,7 +195,7 @@
             android:layout_marginLeft="10dp"
             android:text="SAVE"
             android:textStyle="bold"
-            android:textColor="#449c9f"
+            android:textColor="#419fc4"
             android:layout_below="@+id/alarm_ringtone_container"
             android:layout_alignParentLeft="true"
             android:id="@+id/btnsave"
@@ -210,7 +211,7 @@
             android:layout_height="wrap_content"
             android:text="CANCEL"
             android:textStyle="bold"
-            android:textColor="#449c9f"
+            android:textColor="#419fc4"
             android:layout_below="@+id/alarm_ringtone_container"
             android:layout_alignParentRight="true"
             android:id="@+id/btncancelnotice"

@@ -20,6 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/custom_switch_button"
         android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:text="default" />
     </RelativeLayout>
 </merge>

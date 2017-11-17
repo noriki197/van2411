@@ -6,11 +6,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.Toolbar;
 
 public class NoticeActivity extends ListActivity {
     private AlarmListAdapter mAdapter;
@@ -22,7 +25,6 @@ public class NoticeActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         mContext = this;
         this.setTitle("Notice");
-        this.setTitleColor(Color.BLUE);
         setContentView(R.layout.activity_notice);
         mAdapter = new AlarmListAdapter(this, dbHelper.getAlarms());
 

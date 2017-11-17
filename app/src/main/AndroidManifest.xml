@@ -39,11 +39,14 @@
             android:name=".EditActivity"
             android:windowSoftInputMode="adjustResize"></activity>
         <activity android:name=".NoticeActivity"
-            android:theme="@style/Widget.AppCompat.ActionBar"></activity>
+            android:theme="@style/Widget.AppCompat.Toolbar">
+
+        </activity>
         <activity android:name=".AlarmScreen"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity android:name=".AlarmDetailsActivity"
-            android:theme="@style/Theme.AppCompat"/>
+            android:theme="@style/AppTheme"
+            />
         <service android:name=".AlarmService"
             android:enabled="true"/>
         <receiver android:name=".AlarmManagerHelper">

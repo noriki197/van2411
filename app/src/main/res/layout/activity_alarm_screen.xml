@@ -29,7 +29,7 @@
         android:gravity="center"
         android:text="Alarm name"
         android:textSize="20sp"
-        android:textColor="#ffff"/>
+        android:textColor="#f70101"/>
 
     <Button
         android:id="@+id/alarm_screen_dismiss"
