@@ -8,61 +8,16 @@
     <ImageButton
         android:id="@+id/imgbtntimetable"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-
+        android:layout_height="280dp"
         android:background="@drawable/bgformainbtn"
         android:src="@drawable/imgtimetable_mainlayout"
-
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imgbtntimetable"
-        android:weightSum="2"
-        >
-        <LinearLayout
+        <ImageButton
+            android:layout_below="@id/imgbtntimetable"
+            android:id="@+id/imgbtn_calendar_dv"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="2">
-            <ImageButton
-                android:id="@+id/imgbtncamera"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bgformainbtn"
-                android:src="@drawable/imgcamera"
-                />
-            <ImageButton
-                android:id="@+id/imgbtnlist"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/imglist"
-                android:background="@drawable/bgformainbtn"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="2">
-            <ImageButton
-                android:id="@+id/imgbtnsetting"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/imgsettings"
-                android:background="@drawable/bgformainbtn"/>
-            <ImageButton
-                android:id="@+id/imgbtninfo"
-                android:src="@drawable/imginfo"
-                android:background="@drawable/bgformainbtn"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-    </LinearLayout>
+            android:src="@drawable/img_calendar_dv"
+            android:background="@drawable/bgformainbtn"/>
 </RelativeLayout>

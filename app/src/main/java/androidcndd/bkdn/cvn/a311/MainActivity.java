@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     ImageButton imgbtntimetable;
-    ImageButton imgbtncamera,imgbtndocument, imgbtnsetting;
+    ImageButton imgbtncamera,imgbtndocument, imgbtncalendar_dv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,24 +21,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(maintotimetable);
             }
         });
-        imgbtncamera = (ImageButton) findViewById(R.id.imgbtncamera);
-        imgbtncamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent maintocamera = new Intent(MainActivity.this,Camera_chip.class);
-                startActivity(maintocamera);
-            }
-        });
-        imgbtndocument = (ImageButton) findViewById(R.id.imgbtnlist);
-        imgbtndocument.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent maintolist = new Intent(MainActivity.this,document_chip.class);
-                startActivity(maintolist);
-            }
-        });
-        imgbtnsetting = (ImageButton) findViewById(R.id.imgbtnsetting);
-        imgbtnsetting.setOnClickListener(new View.OnClickListener() {
+        imgbtncalendar_dv = (ImageButton) findViewById(R.id.imgbtn_calendar_dv);
+        imgbtncalendar_dv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent maintosetting = new Intent(MainActivity.this,Month_Calendar.class);

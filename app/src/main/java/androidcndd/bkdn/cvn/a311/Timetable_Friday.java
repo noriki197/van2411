@@ -189,12 +189,7 @@ public class Timetable_Friday extends AppCompatActivity {
         });
 
 
-        imgbtndocument_Dialog_optionlv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     private void Create() {
@@ -218,7 +213,6 @@ public class Timetable_Friday extends AppCompatActivity {
         imgbtndelete_Dialog_optionlv = (ImageButton) dialog_optionlv.findViewById(R.id.imgbtndelete_dialogoptionlv);
         imgbtnedit_Dialog_optionlv = (ImageButton) dialog_optionlv.findViewById(R.id.imgbtnedit_dialogoptionlv);
         imgbtnremind_Dialog_optionlv = (ImageButton) dialog_optionlv.findViewById(R.id.imgbtnremind_dialogoptionlv);
-        imgbtndocument_Dialog_optionlv = (ImageButton) dialog_optionlv.findViewById(R.id.imgbtnfolder_dialogoptionlv);
         //dialog capnhat cong viec
         dialog_capnhatcongviec = new Dialog(Timetable_Friday.this);
         dialog_capnhatcongviec.setContentView(R.layout.dialog_capnhatcongviec);
